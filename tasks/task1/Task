@@ -1,0 +1,9 @@
+Task 1
+
+Starting with very basics, we will start with API Development... Learn the basics of Python as we will be following that. Feel free to select your own language, but try to stay on the same boat as everyone for doubt solving. I'll be solving doubts commonly in Python / FastAPI only..
+
+1. Start learning FastAPI - https://fastapi.tiangolo.com/
+2. 2 min read of features (we are going to use Async Python and gonna beat Go performance) - https://fastapi.tiangolo.com/features/
+3. Refresher on Concurrency and Async Await (very noob to pro) - https://fastapi.tiangolo.com/async/
+4. What are Python Type Hints - https://fastapi.tiangolo.com/python-types/
+5. Complete the First Steps under Tutorial to build a Hello World API - https://fastapi.tiangolo.com/tutorial/

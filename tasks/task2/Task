@@ -1,0 +1,14 @@
+Task 2
+
+* Start learning MongoDB - https://www.mongodb.com/docs/manual/introduction/
+* Spin up a FREE FOREVER cluster on MongoDB Atlas (MongoDB Cloud) to learn and test your hands-on exercises
+    - https://www.mongodb.com/docs/manual/tutorial/getting-started/
+* What are Databases, Collections, Documents? https://www.mongodb.com/docs/manual/core/databases-and-collections/
+    * IMP: Do not learn about Views, Capped Collections and Clustered Collections.
+* Basic CRUD operations - https://www.mongodb.com/docs/manual/crud/
+    - Important to see syntax, and then the examples...
+    - Learn about Query Operators (How to use and when to use) -
+        https://www.mongodb.com/docs/manual/reference/operator/query/
+
+This is just the basics, the tip of the iceberg (5%) of MongoDB. Just learn it native to MongoDB (run commands via
+ MongoDB Shell, directly on MongoDB Atlas or use MongoDB Compass)
