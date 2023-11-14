@@ -1,5 +1,6 @@
+from typing import Union
 from fastapi import FastAPI
-
+from pydantic import BaseModel
 
 app = FastAPI()
 
@@ -43,6 +44,24 @@ It knows this as `name` is of type `str` (inbuilt type)
 async def fetch_name(name: str):
     return {"studentName": name}
 
+##
+# Body
+##
+"""
+For FastAPI to show the body we use pydantic class to specify body schema and
+pass that class as argument in function 
+"""
+
+
+class Item(BaseModel):
+    name: str
+    price: float
+    is_offer: Union[bool, None] = None
+
+
+@app.put("/items/{item_id}")
+def update_item(item_id: int, item: Item):  # here item is the body of put method
+    return {"item_name": item.name, "item_id": item_id}
 
 # You can call the above API like -
 # http://localhost:8000/students?name=SSaha
