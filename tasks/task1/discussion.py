@@ -44,6 +44,38 @@ It knows this as `name` is of type `str` (inbuilt type)
 async def fetch_name(name: str):
     return {"studentName": name}
 
+
+# You can call the above API like -
+# http://localhost:8000/students?name=SSaha
+
+##
+# Request Bodies -
+##
+
+
+class MyBody(BaseModel):
+    name: str
+    age: int
+
+
+"""
+FastAPI knows that a request body param `req_body`
+will be found, therefore will pass it as 
+an argument in the function.
+
+It knows this as `req_body` is of type `MyBody` (pydantic type)
+"""
+
+
+@app.post("/students") # POST API
+async def fetch_name(req_body: MyBody):
+    return {"studentName": req_body.name}
+
+# You can call the above API with Postman and make a POST request with following JSON body -
+# {
+#   "name": "SSaha",
+#   "age": 10
+# }
 ##
 # Body
 ##
@@ -62,6 +94,3 @@ class Item(BaseModel):
 @app.put("/items/{item_id}")
 def update_item(item_id: int, item: Item):  # here item is the body of put method
     return {"item_name": item.name, "item_id": item_id}
-
-# You can call the above API like -
-# http://localhost:8000/students?name=SSaha
