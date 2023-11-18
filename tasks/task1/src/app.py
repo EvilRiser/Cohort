@@ -4,7 +4,7 @@ from pydantic import BaseModel
 import uvicorn
 
 
-app = FastAPI()
+app = FastAPI(openapi_url="/api/v1/openapi.json", docs_url="/info")
 
 
 class Item(BaseModel):
